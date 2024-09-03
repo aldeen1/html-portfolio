@@ -1,0 +1,122 @@
+*{
+    background:#1E201E;
+    font-family:'Poppins';
+    text-align: center;
+}
+
+h1{
+    font-size: 20px;
+    color:#ECDFCC;
+}
+
+h2{
+    color:#697565;
+}
+
+h3{
+    color:#ECDFCC;
+}
+
+ul{
+    display:inline-block;
+    text-align: left;
+}
+
+li{
+    color:#697565;
+}
+
+p{
+    color:#697565;
+}
+
+.foto-pribadi{
+    margin-top: 10%;
+}
+
+a{
+    color:#ECDFCC;
+}
+
+.avatar {
+    object-fit: cover;
+    vertical-align: middle;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+  }
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.fa:hover{
+    opacity: 70%;
+}
+
+.socials a {
+    font-size: 20px;
+    margin-right: 10px;
+    position: relative;
+}
+
+.socials a[data-email]::after {
+    content: attr(data-email);
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #333;
+    color: #fff;
+    padding: 5px;
+    border-radius: 4px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+}
+
+.socials a:hover[data-email]::after {
+    opacity: 1;
+}
+
+.socials a[data-phone]::after{
+    content: attr(data-phone);
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #333;
+    color: #fff;
+    padding: 5px;
+    border-radius: 4px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+}
+
+.socials a:hover[data-phone]::after{
+    opacity: 1;
+}
+
+.socials a[data-username]::after{
+    content: attr(data-username);
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #333;
+    color: #ECDFCC;
+    padding: 5px;
+    border-radius: 4px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+}
+
+.socials a:hover[data-username]::after{
+    opacity: 1;
+}
