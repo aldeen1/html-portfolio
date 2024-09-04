@@ -15,6 +15,7 @@ h2{
 
 h3{
     color:#ECDFCC;
+    text-align: left;
 }
 
 ul{
@@ -28,6 +29,14 @@ li{
 
 p{
     color:#697565;
+}
+
+footer{
+    font-size:10px;
+    position:fixed;
+    left:0;
+    bottom:0;
+    width:100%
 }
 
 .foto-pribadi{
@@ -80,43 +89,5 @@ a{
 }
 
 .socials a:hover[data-email]::after {
-    opacity: 1;
-}
-
-.socials a[data-phone]::after{
-    content: attr(data-phone);
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    transform: translateX(-50%);
-    background: #333;
-    color: #fff;
-    padding: 5px;
-    border-radius: 4px;
-    opacity: 0;
-    transition: opacity 0.3s ease;
-    pointer-events: none;
-}
-
-.socials a:hover[data-phone]::after{
-    opacity: 1;
-}
-
-.socials a[data-username]::after{
-    content: attr(data-username);
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    transform: translateX(-50%);
-    background: #333;
-    color: #ECDFCC;
-    padding: 5px;
-    border-radius: 4px;
-    opacity: 0;
-    transition: opacity 0.3s ease;
-    pointer-events: none;
-}
-
-.socials a:hover[data-username]::after{
     opacity: 1;
 }
